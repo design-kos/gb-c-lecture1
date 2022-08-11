@@ -1,27 +1,31 @@
 ﻿// Напишите программу, которая на вход принимает число и выдаёт его квадрат (число умноженное на само себя).
 
-static void Main(string[] args)
+using System;
+ 
+namespace Homeworks
+{
+    class Program
     {
-        Console.WriteLine("Введи 2 числа и узнайте, какое из них больше, а какое меньше");
-        int a, b;
-        Console.WriteLine("Введи первое число - ");
-        a = Convert.ToInt32(Console.Read());
-        Console.WriteLine("Введи второе число - ");
-        b = Convert.ToInt32(Console.Read());
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите первое число: ");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите второе число: ");
+            int num2 = Convert.ToInt32(Console.ReadLine());
  
-        bool Compare0 = a > b;
-        bool Compare1 = a == b;
-        bool Compare2 = a < b;
- 
-        if (Chto0)
-        {
-            Console.WriteLine($"Число {a} больше чем {b}");
+            if(num1 > num2)
+            {
+                Console.WriteLine($"Число {num1} больше чем {num2}");
+            }
+            else if (num1 < num2)
+            {
+                Console.WriteLine($"Число {num2} больше чем {num1}");
+            }
+            else
+            {
+                Console.WriteLine($"Числа {num1} и {num2} равны");
+            }
+            Console.ReadKey();
         }
-        else if (Chto1)
-        {
-            Console.WriteLine($"Числа {a} и {b} равны");
-        }
-        else
-        {
-            Console.WriteLine($"Число {b} больше чем {a}");
-        }
+    }
+}
