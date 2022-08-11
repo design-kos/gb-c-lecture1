@@ -25,7 +25,6 @@ namespace Homeworks
             {
                 Console.WriteLine($"Числа {num1} и {num2} равны");
             }
-            Console.ReadKey();
         }
     }
 }
